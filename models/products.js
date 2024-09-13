@@ -8,7 +8,7 @@ const productsSchema =new  mongoose.Schema({
         type:String,
         required:true
     },
-    actualPrice:{
+    originalPrice:{
         type:Number,
         required:true
     },
@@ -35,10 +35,15 @@ const productsSchema =new  mongoose.Schema({
         required:true
     },
     weight:{
-        type:Number
+        type:String
     },
     stockItem:{
-        type:Number
+        type:Number,
+        default:5
+    },
+    width:{
+        type:String,
+        deafult:"7b"
     }
 });
 

@@ -10,10 +10,11 @@ router.post('/', async (req, res) =>{
         console.log(data);
 
         const  product = new Products(data);
+        const response = await product.save();
 
-        console.log(product);
+        console.log(response);
 
-        // res.status(200).json({response: response});
+        res.status(200).json({response: response});
     }
     catch(err){
         console.log(err);
