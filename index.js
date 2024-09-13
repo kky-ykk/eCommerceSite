@@ -14,8 +14,10 @@ app.get('/', function (req, res) {
 
 // Import the router files
 const userRoutes=require("./routes/userRoutes");
+const productRoutes=require("./routes/productsRoute");
 
 app.use('/user', userRoutes);
+app.use("/product",productRoutes);
   
 app.listen(PORT, ()=>{
     console.log('listening on port 3000');
