@@ -1,0 +1,100 @@
+
+
+.Container{
+    padding: 0px 20px;
+}
+
+.bannerImage{
+    width: 100%;
+}
+
+.bannerImage img{
+    width: 100%;
+    height: 120%;
+}
+
+.banner{
+    position: relative;
+}
+
+.innerCon{
+    position: absolute;
+    top: 28%;
+    left: 30%;
+}
+
+
+
+/* FilterSortUI.module.css */
+.filterSortContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .filters {
+    display: flex;
+  }
+  
+  .dropdown {
+    margin-right: 20px;
+  }
+  
+  .dropdown label {
+    display: block;
+  }
+  
+  .dropdown select {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .sortAndView {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sortBy {
+    margin-right: 20px;
+  }
+  
+  .sortBy label {
+    font-weight: bold;
+  }
+  
+  .sortBy select {
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .viewOptions button {
+    background: none;
+    border: none;
+    font-size: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+
+  /* products */
+
+  .productList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 30px;
+  }
+
+  .showMore{
+    text-align: center;
+
+  }
+
+  .showMore span{
+    padding: 4px 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+  }

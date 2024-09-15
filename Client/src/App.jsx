@@ -1,21 +1,48 @@
 import './App.css';
-import l1 from "./assets/api-tableLamp2.svg";
-import l2 from "./assets/api-tableLamp.svg";
+import CartProvider from './contextProvider/contextReducer';
+import Home from './components/home';
+import Login from './components/login';
+import SignUp from './components/signup';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS bundle (with Popper.js)
+import Shop from './components/shop';
+import { useState } from 'react';
+
+
 
 function App() {
+
+  const [banner, setBanner] = useState(true);
+
   return (
     <>
-      <h1>Google Drive Image Example</h1>
-      <img 
-        src={l1}
-        alt="Google Drive Image" 
-        style={{ width: '300px', height: '300px' }} 
-      />
-      <img 
-        src={l2}
-        alt="Google Drive Image" 
-        style={{ width: '300px', height: '300px' }} 
-      />
+       <CartProvider>
+
+        <Router>
+          {/* Top Banner */}
+          {
+            banner &&
+            <div style={{backgroundColor:"#f0f0f0",padding:"10px",fontSize:"14px"}}>
+              <p>
+                30% off storewide — Limited time! <a href="#">Shop Now</a>
+                <span style={{ float: "right", cursor: "pointer" }} onClick={() => setBanner(false)}>X</span>
+              </p>
+            </div>
+          }
+
+          <div>
+            <Routes>
+              <Route exact path="/" element={<Home/>}/>
+              <Route exact path="/shop" element={<Shop/>}/>
+              <Route exact path="/signup" element={<SignUp/>}/> 
+              <Route exact path="/login" element={<Login/>}/> 
+              {/* <Route exact path="/myOrder" element={<MyOrder/>}/> */}
+            </Routes>
+            
+          </div>
+        </Router>
+      </CartProvider>
     </>
   );
 }

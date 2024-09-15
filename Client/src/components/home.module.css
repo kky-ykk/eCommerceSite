@@ -1,0 +1,212 @@
+
+/* General Styles */
+
+
+/* Hero Section */
+.hero {
+  padding: 0 0 50px 0;
+  background-color: #fafafa;
+}
+
+.carousel img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.carousel{
+  position: relative;
+}
+
+.carouselArrows {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carouselArrows .prev,
+.carouselArrows .next {
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  padding: 40px 0;
+}
+
+.category {
+  /* width: 30%; */
+  text-align: center;
+}
+
+.category img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.category button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* New Arrivals Section */
+.newArrivals {
+  padding: 40px 0;
+}
+
+.productList {
+  display: flex; /* Flexbox ensures the items are placed horizontally */
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 95%;
+}
+
+.product {
+  width: 5%;
+  margin-bottom: 10px;
+}
+
+.product img {
+  width: 20%;
+  height: auto;
+}
+
+.product .originalPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.product button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Sale Section */
+.sale {
+  display: flex;
+}
+
+.sale >div{
+  display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: start;
+    gap: 5px;
+    vertical-align: center;
+    justify-content: center;
+    padding-left: 57px;
+}
+
+.sale img {
+  width: 50%;
+}
+
+.sale h2 {
+  font-size: 36px;
+  
+}
+
+
+/* Newsletter Section */
+.newsletter {
+  padding: 40px;
+  background-color: #fafafa;
+  /* display: flex; */
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* Footer.module.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.policyLinks a {
+  color: white;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.socialMediaIcons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
