@@ -49,3 +49,25 @@ This is a full-stack eCommerce website designed to allow users to register, log 
 - **Get Product**: 
   ```http
   GET /product:id
+
+
+ - # Website References Images
+ - User Registration Page
+     <img src="ReferenceImages/singUp.png" />
+ - User Login Page
+     <img src="ReferenceImages/logIn Page.png" />
+ - User Data In Mongodb
+     <img src="ReferenceImages/userData.png" />
+ - User SignUp endpoint
+     <img src="ReferenceImages/userRegister.png" />
+ -Token generation During login
+        <img src="ReferenceImages/userLoginTokenGen.png" />
+ - Products Post to DB
+     <img src="ReferenceImages/postProducts.png" />
+ - Site Home Page
+     <img src="ReferenceImages/homePage.png" />
+ - Website shop page
+     <img src="ReferenceImages/shopPage.png" />
+
+ - Website cart page
+     <img src="ReferenceImages/cartPage.png" />
